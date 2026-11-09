@@ -1,0 +1,50 @@
+:root {
+  --purple:      #067B92; /* Darker teal for button backgrounds */
+  --purple2:     #00D2FF; /* Bright cyan for highlights */
+  --purpleDark:  #045869; /* Even darker teal for hover states */
+  --bg:          #0B1120;
+  --surface:     #141C2F;
+  --surface2:    #1E293B;
+  --green:       #10B981;
+  --amber:       #F59E0B;
+  --red:         #EF4444;
+  --text:        #F8FAFC;
+  --muted:       #94A3B8;
+  --border:      rgba(255, 255, 255, 0.1);
+  /* --font-display / --font-body sont definies par next/font (classes sur <html>) :
+     ne pas les redeclarer ici (auto-reference = variable invalide = police Times). */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button, input, textarea, a {
+  font-family: inherit;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display, 'Inter', sans-serif);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 3px; }
+
+/* RainbowKit override */
+[data-rk] {
+  --rk-colors-accentColor: #00D2FF !important;
+}
