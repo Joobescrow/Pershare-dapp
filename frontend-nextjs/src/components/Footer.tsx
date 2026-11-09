@@ -25,7 +25,7 @@ export function Footer() {
       
       {/* Social Icons */}
       <div style={{ display: 'flex', gap: '32px', alignItems: 'center', marginTop: '16px' }}>
-        <a href="https://t.me/JoobEscrow_Official" target="_blank" rel="noreferrer" style={{ color: '#8892b0', transition: 'color 0.2s' }} aria-label="Telegram (Joob ecosystem)">
+        <a href="https://t.me/JoobEscrow" target="_blank" rel="noreferrer" style={{ color: '#8892b0', transition: 'color 0.2s' }} aria-label="Telegram (Joob ecosystem)">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="m15 5-10 5 3.5 1 1.5 6 2-3 3 2.5 3-12-3-1.5z"></path>
           </svg>
